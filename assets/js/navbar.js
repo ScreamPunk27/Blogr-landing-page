@@ -9,10 +9,31 @@ const connectLabel=document.getElementById('connect');
 const connectList=document.getElementById('connect-list');
 
 
-
 let visibleProduct=false;
 let visibleCompany=false;
 let visibleConnect=false;
+
+/*DESKTOP*/
+const productDesktop=document.getElementById('a-product-desktop');
+const productUlDesktop=document.getElementById('ul-product-desktop');
+const productArrow=document.getElementById('product-arrow');
+
+let visibleProductDesktop=false;
+
+
+const companyDesktop=document.getElementById('a-company-desktop');
+const companyUlDesktop=document.getElementById('ul-company-desktop');
+const companyArrow=document.getElementById('company-arrow');
+
+let visibleCompanyDesktop=false;
+
+
+const connectDesktop=document.getElementById('a-connect-desktop');
+const connectUlDesktop=document.getElementById('ul-connect-desktop');
+const connectArrow=document.getElementById('connect-arrow');
+
+let visibleConnectDesktop=false;
+
 
 btnBurger.addEventListener('click',()=>{
         navMenuMobile.style.display="block";
@@ -57,5 +78,42 @@ connectLabel.addEventListener('click',()=>{
     }else{
         connectList.style.display="block";
         visibleConnect=true;
+    }
+});
+
+
+productDesktop.addEventListener('click',()=>{
+    if(visibleProductDesktop===true){
+        productUlDesktop.style.display="none";
+        productArrow.style.rotate="none";
+        visibleProductDesktop=false;
+    }else{
+        productUlDesktop.style.display="block";
+        productArrow.style.rotate="180deg";
+        visibleProductDesktop=true;
+    }
+});
+
+companyDesktop.addEventListener('click',()=>{
+    if(visibleCompanyDesktop===true){
+        companyUlDesktop.style.display="none";
+        companyArrow.style.rotate="none";
+        visibleCompanyDesktop=false;
+    }else{
+        companyUlDesktop.style.display="block";
+        companyArrow.style.rotate="180deg";
+        visibleCompanyDesktop=true;
+    }
+});
+
+connectDesktop.addEventListener('click',()=>{
+    if(visibleConnectDesktop===true){
+        connectUlDesktop.style.display="none";
+        connectArrow.style.rotate="none";
+        visibleConnectDesktop=false;
+    }else{
+        connectUlDesktop.style.display="block";
+        connectArrow.style.rotate="180deg";
+        visibleConnectDesktop=true;
     }
 });

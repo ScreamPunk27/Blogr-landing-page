@@ -231,6 +231,38 @@ hr{
 }
 
 
+/*DESKTOP NAVBAR*/
+
+.ul-desktop{
+    display: none;
+    position:absolute;
+    top: 40px;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.ul-desktop li{
+    margin: .5rem 0;
+}
+
+.ul-desktop li a{
+    color: #000;
+    font-size: .8rem;
+}
+
+#ul-product-desktop{
+    
+}
+
+#ul-company-desktop{
+    left: 125px;
+}
+
+#ul-connect-desktop{
+    left: 250px;
+}
+
 /*SEPARATOR*/
 
 .separator{
@@ -304,11 +336,11 @@ footer img{
     /*HEADER*/
 
     header{
-        background-color: var(--veryLightRed);
+        background-color: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
         background-image: url('../img/bg-pattern-intro-desktop.svg');
-        background-size:cover;
+        background-size:130%;
         background-repeat: no-repeat;
-        background-position:center;
+        background-position:left;
         border-bottom-left-radius: 100px;
         padding: 3rem;
     }
@@ -323,6 +355,7 @@ footer img{
 
     .nav-links{
        display: flex;
+       position: relative;
     }
 
     .nav-logo{
